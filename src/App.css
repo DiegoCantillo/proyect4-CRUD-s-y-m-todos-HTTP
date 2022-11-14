@@ -149,7 +149,7 @@ body button:hover{
 .App section {
   width: 65%;
   padding-left: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100vh;
   background-color: #9fe9df8d;
   display: flex;
