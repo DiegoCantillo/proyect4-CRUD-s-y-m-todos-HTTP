@@ -1,0 +1,297 @@
+body{
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;;
+}
+
+@media(max-width: 681px){
+  body{
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+body button:hover{
+  cursor: pointer;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+@media(max-width: 681px){
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.App  form {
+  width: 35%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  right: 0;
+}
+
+@media(max-width: 1315px){
+  .App form {
+    width: 50%;
+  }
+}
+
+@media(max-width: 681px){
+  .App form {
+    height: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+}
+
+.App  form .all-input{
+  min-width: 450px;
+  width: 72%;
+  height: 390px;
+  margin: auto;
+  box-shadow: -1px -1px 24px -5px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+}
+
+@media(max-width: 1315px){
+  .App form .all-input {
+    min-width: 430px;
+    width: 40%;
+  }
+}
+@media(max-width: 1008px){
+  .App form .all-input {
+    min-width: 390px;
+    width: 30%;
+  }
+}
+@media(max-width: 435px){
+  .App form .all-input {
+    min-width: 330px;
+    width: 25%;
+  }
+}
+
+.App  form .all-input h1{
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+.App form .input-container{
+  width: 100%;
+  height: 50px;
+}
+
+.App form .input-container label {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.App form .input-container input{
+  width: 86%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(226, 223, 223);
+}
+@media(max-width: 1008px){
+  .App form .input-container input {
+    width: 80%;
+  }
+}
+
+@media(max-width: 435px){
+  .App form .input-container input {
+    width: 80%;
+  }
+}
+
+.App form .input-container .btn-visible {
+  width: 81%;
+  height: 25px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+@media(max-width: 1008px){
+  .App form .input-container .btn-visible {
+    width: 75%;
+  }
+}
+@media(max-width: 1008px){
+  .App form .input-container .btn-visible {
+    width: 74%;
+  }
+}
+
+.App form .input-container button{
+  height: 27px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(226, 223, 223);
+}
+
+.App section {
+  width: 65%;
+  padding-left: 0;
+  overflow: scroll;
+  height: 100vh;
+  background-color: #9fe9df8d;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width: 1359px){
+  .App section {
+    width: 60%;
+  }
+}
+@media(max-width: 1008px){
+  .App section {
+    width: 50%;
+  }
+}
+@media(max-width: 681px){
+  .App section {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.App section ul{
+  padding-left: 0;
+}
+
+.App section .btn-update-cancel{
+  display: flex;
+  text-align: center;
+}
+
+.App ul .btn-update-cancel button{
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 7px;
+  font-size: 16px;
+}
+@media(max-width: 1008px){
+  .App ul .btn-update-cancel button{
+    font-size: 13px;
+  }
+}
+
+.App ul .btn-update-cancel .fa-pencil{
+  color: black;
+}
+@media(max-width: 1008px){
+  .App ul .btn-update-cancel .fa-pencil{
+    font-size: 13px;
+  }
+}
+
+.App ul li{
+  width: 75%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 15px 40px 15px 40px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+@media(max-width: 1008px){
+  .App ul li{
+    width: 85%;
+    padding: 25px 20px;
+
+  }
+}
+
+.App ul li h3, p{
+  margin: 5px;
+}
+
+@media(max-width: 1008px){
+  .App ul li h3, p{
+    font-size: 13px;
+  }
+}
+
+.App .name-and-lastname {
+  display: flex;
+}
+
+.App .name-and-lastname .input-container .duo-name-lastname{
+  width: 80%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.App .name-and-lastname .input-container .duo-name-lastname{
+  width: 80%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media(max-width: 1008px){
+  .App .name-and-lastname .input-container .duo-name-lastname {
+    width: 70%;
+  }
+}
+@media(max-width: 435px){
+  .App .name-and-lastname .input-container .duo-name-lastname {
+    width: 73%;
+  }
+}
+
+.App Form .btn-upload-and-cancel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App Form .btn-upload-and-cancel .duo{
+  width: 360px;
+}
+@media(max-width: 1008px){
+  .App Form .btn-upload-and-cancel .duo {
+    width: 70%;
+  }
+}
+
+.App Form .btn-upload-and-cancel button{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34a596;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.App Form .btn-upload-and-cancel .cancel-upadate{
+  background-color: red;
+  font-weight: 700;
+  color: whitesmoke;
+}
