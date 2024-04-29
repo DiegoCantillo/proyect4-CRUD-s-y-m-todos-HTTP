@@ -65,7 +65,7 @@ body button:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 10px 10px 10px;
+  padding: 0 2rem 0 1rem;
   border-radius: 8px;
 }
 
@@ -83,7 +83,7 @@ body button:hover{
 }
 @media(max-width: 435px){
   .App form .all-input {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -95,7 +95,12 @@ body button:hover{
 .App form .input-container{
   width: 100%;
   height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
+
 
 .App form .input-container label {
   margin: 10px;
@@ -103,7 +108,7 @@ body button:hover{
 }
 
 .App form .input-container input{
-  width: 86%;
+  width: 100%;
   height: 25px;
   border: none;
   border-radius: 5px;
@@ -114,7 +119,7 @@ body button:hover{
   outline: none;
 }
 
-@media(max-width: 1008px){
+/* @media(max-width: 1008px){
   .App form .input-container input {
     width: 80%;
   }
@@ -124,33 +129,20 @@ body button:hover{
   .App form .input-container input {
     width: 80%;
   }
-}
+} */
 
-.App form .input-container .btn-visible {
-  width: 81%;
-  height: 25px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-}
-@media(max-width: 1008px){
-  .App form .input-container .btn-visible {
-    width: 75%;
-  }
-}
-@media(max-width: 1008px){
-  .App form .input-container .btn-visible {
-    width: 74%;
-  }
-}
 
 .App form .input-container button{
   height: 27px;
   border: none;
   border-radius: 0 5px 5px 0;
   background-color: rgb(226, 223, 223);
+  position: absolute;
+  right: 0;
 }
 
 .App section {
+  padding-top: 25px;
   width: 65%;
   padding-left: 0;
   overflow-y: scroll;
@@ -251,21 +243,10 @@ body button:hover{
 }
 
 .App .name-and-lastname .input-container .duo-name-lastname{
-  width: 80%;
+  width: 100%;
   height: 25px;
   border: none;
   border-radius: 5px;
-}
-
-@media(max-width: 1008px){
-  .App .name-and-lastname .input-container .duo-name-lastname {
-    width: 70%;
-  }
-}
-@media(max-width: 435px){
-  .App .name-and-lastname .input-container .duo-name-lastname {
-    width: 73%;
-  }
 }
 
 .App Form .btn-upload-and-cancel{
