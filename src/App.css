@@ -109,6 +109,11 @@ body button:hover{
   border-radius: 5px;
   background-color: rgb(226, 223, 223);
 }
+
+.App form .input-container input:focus{
+  outline: none;
+}
+
 @media(max-width: 1008px){
   .App form .input-container input {
     width: 80%;
