@@ -23,14 +23,12 @@ const UsersForm = ({ getUser, userSelected, desSelect, Toaster, toast }) => {
     }, [userSelected])
 
     const submit = (data) => {
-        userSelected ? toast.success("successful update", { duration: 2000 }) : toast.success("user created successfully", { duration: 2000 })
-
-
         if (userSelected) {
             axios.put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
                 .then(() => {
                     getUser()
                     desSelect()
+                    toast.success("successful update", { duration: 2000 })  
                 })
                 .catch(error => console.log(error.response?.data))
         } else {
@@ -38,6 +36,7 @@ const UsersForm = ({ getUser, userSelected, desSelect, Toaster, toast }) => {
                 .then(() => {
                     getUser()
                     reset(clearInput)
+                    toast.success("user created successfully", { duration: 2000 })
                 })
                 .catch(error => console.log(error.response?.data))
         }
