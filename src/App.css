@@ -83,8 +83,7 @@ body button:hover{
 }
 @media(max-width: 435px){
   .App form .all-input {
-    min-width: 330px;
-    width: 25%;
+    width: 100%;
   }
 }
 
