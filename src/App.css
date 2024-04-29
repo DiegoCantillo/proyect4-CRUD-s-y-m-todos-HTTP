@@ -84,6 +84,8 @@ body button:hover{
 @media(max-width: 435px){
   .App form .all-input {
     width: 80%;
+    border-radius: 0;
+    padding: 0 2rem 0 0;
   }
 }
 
