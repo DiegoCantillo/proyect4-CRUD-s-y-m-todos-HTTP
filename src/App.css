@@ -237,8 +237,6 @@ body button:hover{
 
 .App .name-and-lastname {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .App .name-and-lastname .input-container .duo-name-lastname{
@@ -263,13 +261,6 @@ body button:hover{
 @media(max-width: 435px){
   .App .name-and-lastname .input-container .duo-name-lastname {
     width: 73%;
-  }
-}
-
-@media(max-width: 435px){
-  .App .name-and-lastname .input-container .duo-name-lastname label {
-    margin: 0;
-    padding: 0;
   }
 }
 
